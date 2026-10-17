@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="shieldGrad" x1="8" y1="4" x2="56" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B5ED7" />
+      <stop offset="100%" stop-color="#084298" />
+    </linearGradient>
+    <linearGradient id="pinGrad" x1="16" y1="12" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#198754" />
+      <stop offset="100%" stop-color="#0F5132" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Shield -->
+  <path
+    d="M32 4L56 12V30C56 44.5 45.8 57.2 32 60C18.2 57.2 8 44.5 8 30V12L32 4Z"
+    fill="url(#shieldGrad)"
+    stroke="#FD7E14"
+    stroke-width="2"
+  />
+
+  <!-- Map Marker Silhouette inside Shield -->
+  <path
+    d="M32 12C23.2 12 16 19.2 16 28C16 39 32 50 32 50C32 50 48 39 48 28C48 19.2 40.8 12 32 12Z"
+    fill="url(#pinGrad)"
+    opacity="0.95"
+  />
+
+  <!-- Orange Pulse Core Top Accent -->
+  <circle cx="32" cy="18" r="3" fill="#FD7E14" />
+
+  <!-- Monogram SX -->
+  <text
+    x="32"
+    y="35"
+    text-anchor="middle"
+    font-family="system-ui, -apple-system, sans-serif"
+    font-weight="900"
+    font-size="16"
+    letter-spacing="0.5"
+    fill="#FFFFFF"
+  >SX</text>
+</svg>

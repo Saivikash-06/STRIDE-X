@@ -1,0 +1,70 @@
+# Monorepo .gitignore for STRIDE-X (Frontend & Backend)
+
+# Dependencies & Local Junctions
+node_modules/
+frontend/node_modules/
+/src
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Python / Virtual Environments
+.venv/
+backend/.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*/__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+.coverage
+htmlcov/
+dist/
+
+# SQLite databases & temp files
+*.sqlite3
+*.db
+!backend/alembic/**
+stride_x.db
+
+# Next.js & Frontend builds
+.next/
+frontend/.next/
+out/
+frontend/out/
+build/
+frontend/build/
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+frontend/tsconfig.tsbuildinfo
+next-env.d.ts
+frontend/next-env.d.ts
+
+# Logs & Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Environment files
+.env*.local
+.env
+frontend/.env.local
+backend/.env
+!.env.example
+!frontend/.env.example
+!backend/.env.example
+
+# OS / Editor artifacts
+.DS_Store
+Thumbs.db
+*.pem
+.idea/
